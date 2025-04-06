@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Course Details</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+        <body>
+            <main>
+                <section id="algoritma">
+                <section id="enroll">
+                    <h2>Enroll in this Course</h2>
+                    <p>To enroll in this course, please click the button below:</p>
+                    <a href="#" class="enroll-button">Enroll Now</a>
+                </section>
+            </main>
+        </body>
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const course = params.get("course");
+        
+            const algoritmaSection = `
+                <section id="algoritma">
+                    <h2>Pengertian Algoritma</h2>
+                    <p>Algoritma adalah langkah-langkah logis yang disusun secara sistematis untuk menyelesaikan suatu permasalahan.
+                    Algoritma adalah inti dari pemrograman. Secara sederhana, algoritma merupakan urutan langkah-langkah logis dan sistematis yang digunakan untuk menyelesaikan sebuah masalah. Dalam dunia teknologi, algoritma sangat penting karena komputer hanya bisa bekerja jika diberikan perintah yang jelas, terstruktur, dan bisa dijalankan dalam urutan tertentu. Sama seperti resep memasak yang memiliki langkah demi langkah, algoritma membantu kita memastikan solusi bisa dilakukan dengan cara yang efisien.
+                    </p>
+                    <h2>Ciri-Ciri Algoritma</h2>
+                    <p>
+                    Ciri-ciri dari algoritma adalah harus berhingga (ada akhir), terstruktur (tersusun rapi), jelas dan tidak membingungkan, serta efisien dalam menyelesaikan masalah. Algoritma juga bisa dituliskan dalam berbagai bentuk, seperti deskripsi naratif, pseudocode (kode semu), dan flowchart (diagram alur). Pseudocode dan flowchart biasanya digunakan untuk memudahkan kita merancang program sebelum ditulis dalam bahasa pemrograman yang sebenarnya. Seperti berikut :
+                    </p>
+                    <ul>
+                        <li>Berhingga – Jumlah langkah terbatas dan bisa diselesaikan.</li>
+                        <li>Terstruktur – Langkah-langkah disusun secara urut dan logis.</li>
+                        <li>Jelas dan Tidak Ambigu – Setiap langkah harus mudah dimengerti dan tidak membingungkan.</li>
+                        <li>Efisien – Menyelesaikan masalah dengan cara yang cepat dan tepat.</li>
+                    </ul>
+                    <h2>Contoh Sederhana Algoritma</h2>
+                    <p>Contoh nyata dari algoritma bisa dilihat dalam aktivitas harian, misalnya saat kita ingin mencari buku di perpustakaan. Kita bisa buat algoritma: masuk ke perpustakaan → cari rak yang sesuai → cari buku berdasarkan abjad atau kategori → ambil buku. Dari hal sederhana ini, siswa bisa belajar bahwa pemikiran algoritmik bukan hanya untuk komputer, tapi juga berguna untuk menyelesaikan berbagai masalah dalam kehidupan nyata secara sistematis. Misalnya membuat teh, seperti langkah dibawah :</p>
+                    <ul>
+                        <li>Siapkan gelas dan teh celup.</li>
+                        <li>Panaskan air hingga mendidih.</li>
+                        <li>Masukkan teh celup ke dalam gelas.</li>
+                        <li>Tuang air panas ke dalam gelas.</li>
+                        <li>Aduk dan sajikan.</li>
+                    </ul>
+                    <h2>Notasi Algoritma :</h2>
+                    <ul>
+                        <li>Deskriptif: menggunakan bahasa sehari-hari.</li>
+                        <li>Pseudocode: menggunakan struktur seperti bahasa pemrograman.</li>
+                        <li>Flowchart: diagram alur menggunakan simbol.</li>
+                    </ul>
+                </section>
+                  <section id="resources">
+                    <h2>Pelajari Video Berikut</h2>
+                    <ul><a href="https://youtu.be/kM9ASKAni_s?feature=shared" target="_blank">Video Pembelajaran Algoritma</a></ul>
+                    <h2>Referensi</h2>
+                    <ul><a href="https://jurnal.umuslim.ac.id/index.php/tika/article/download/368/240?utm_source" target="_blank">Jurnal Universitas Almuslim</a></ul>
+                    <ul><a href="https://jurnalmahasiswa.com/index.php/appa/article/download/2109/1424/4311?utm_source" target="_blank">Jurnal Mahasiswa</a></ul>
+                </section>
+            `;
+        
+            const cssSection = `
+                <section>
+                    <h2>Pengantar Bahasa Pemrograman Prosedural</h2>
+                    <p>Bahasa pemrograman prosedural menggunakan pendekatan langkah demi langkah (prosedur) untuk menjalankan perintah. Bahasa pemrograman prosedural merupakan pendekatan pemrograman yang menyusun instruksi dalam bentuk prosedur atau langkah-langkah terurut. Dalam metode ini, program biasanya terdiri dari beberapa blok yang disebut fungsi atau prosedur, di mana setiap fungsi memiliki tugas tertentu. Pendekatan ini sangat cocok bagi pemula karena mengajarkan logika berpikir yang runtut dan sistematis sesuai dengan alur algoritma.</p>
+                <h2>Karakteristik :</h2>
+                <p>Struktur dasar dalam bahasa prosedural mencakup deklarasi variabel, input/output, percabangan (seperti if/else), dan perulangan (seperti for/while). Semua komponen ini membantu siswa memahami bagaimana komputer memproses data dan mengambil keputusan berdasarkan kondisi tertentu. Karena kode disusun secara berurutan, siswa juga bisa melacak alur program dengan mudah dan memahami bagaimana hasil akhir diperoleh.</p>
+                    <ul>
+                        <li>Menggunakan fungsi atau prosedur.</li>
+                        <li>Urutan instruksi penting.</li>
+                        <li>Contoh bahasa: C, Pascal, BASIC.</li>
+                    </ul>
+                <h2>Struktur Dasar dalam Bahasa Prosedural :</h2>
+                <p>Contoh bahasa pemrograman prosedural yang terkenal antara lain adalah Pascal, BASIC, dan C. Melalui pemrograman prosedural, siswa tidak hanya belajar menulis kode, tetapi juga membangun kemampuan berpikir algoritmik dan problem solving. Mereka diajak untuk merancang solusi, memecah masalah menjadi bagian-bagian kecil, dan kemudian menyusunnya menjadi program yang berjalan dengan baik.</p>
+                    <ul>
+                        <li>Input/Output (misal: scanf, printf di C).</li>
+                        <li>Variabel dan Tipe Data (integer, float, char, dll).</li>
+                        <li>Percabangan (if, else).</li>
+                        <li>Perulangan (for, while).</li>
+                    </ul>
+                <h2>Pelajari Video Berikut</h2>
+                    <ul><a href="https://youtu.be/C7auEyeHrxU?feature=shared" target="_blank">Video Pembelajaran Bahasa Pemrograman Prosedural</a></ul>
+                     <h2>Referensi</h2>
+                    <ul><a href="https://jurnal.umuslim.ac.id/index.php/tika/article/download/368/240?utm_source" target="_blank">Jurnal Universitas Almuslim</a></ul>
+                    <ul><a href="https://jurnalmahasiswa.com/index.php/appa/article/download/2109/1424/4311?utm_source" target="_blank">Jurnal Mahasiswa</a></ul>
+                </section>
+            `;
+        
+            const cSection = `
+                <section>
+                    <h2>Pengenalan Bahasa C</h2>
+                    <p>Bahasa C adalah bahasa pemrograman prosedural yang digunakan untuk membuat berbagai jenis perangkat lunak, mulai dari sistem operasi hingga aplikasi ringan. Bahasa C adalah salah satu bahasa pemrograman paling tua dan berpengaruh di dunia. Dikembangkan pada tahun 1970-an, bahasa ini masih digunakan hingga kini karena kemampuannya dalam mengakses hardware secara langsung dan efisiensi dalam pengolahan data. C juga menjadi dasar dari banyak bahasa pemrograman modern seperti C++, Java, dan Python. Oleh karena itu, mempelajari C adalah langkah awal yang sangat bagus untuk memahami bagaimana sebuah program bekerja dari level dasar.</p>
+                    <h2>Kelebihan Bahasa C :</h2>
+                    <ul>
+                        <li>Cepat dan efisien.</li>
+                        <li>Banyak digunakan di dunia nyata.</li>
+                        <li>Cocok untuk pemula yang ingin memahami dasar-dasar coding.</li>
+                    </ul>
+                    <h2>Contoh Struktur Program Sederhana C :</h2>
+                    <p>Struktur program dalam bahasa C dimulai dari fungsi utama main(), diikuti oleh baris-baris perintah yang menjalankan tugas tertentu, misalnya mencetak teks ke layar menggunakan printf() atau menerima input dengan scanf(). Bahasa ini juga menggunakan tipe data yang harus dideklarasikan terlebih dahulu, seperti int, float, atau char, sehingga membantu siswa lebih disiplin dalam menulis program yang rapi dan efisien. Selain itu, C mengajarkan pentingnya pengelolaan memori dan logika kontrol yang ketat.</p>
+                    <ul><img src="clang.png" alt="Bahasa Pemrograman C" class="course-image"></ul>
+                    <h2>Penjelasan Program :</h2>
+                    <p>Meskipun terlihat sedikit rumit di awal, belajar bahasa C memberikan pemahaman mendalam tentang bagaimana program dikompilasi dan dijalankan oleh komputer. Siswa tidak hanya belajar menulis perintah, tetapi juga mengerti apa yang sebenarnya terjadi saat kode dijalankan. Ini menjadi pondasi kuat bagi mereka yang ingin masuk ke dunia rekayasa perangkat lunak, keamanan siber, atau bahkan pengembangan sistem operasi.</p>
+                    <ul>
+                        <li>#include <stdio.h>: menyisipkan pustaka input/output.</li>
+                        <li>int main(): fungsi utama program.</li>
+                        <li>printf(...): menampilkan output.</li>
+                        <li>return 0;: mengakhiri program dengan nilai 0.</li>
+                    </ul>
+                    <h2>Contoh Praktik Lain :</h2>
+                    <p>Input dua angka dan menjumlahkan:</p>
+                    <ul><img src="clangua.png" alt="Bahasa Pemrograman C" class="course-image"></ul>
+                    <h2>Pelajari Video Berikut</h2>
+                    <ul><a href="https://youtu.be/c8uZ2iKoi6E?feature=shared" target="_blank">Video Pembelajaran Bahasa Pemrograman C</a></ul>
+                     <h2>Referensi</h2>
+                    <ul><a href="https://jurnal.umuslim.ac.id/index.php/tika/article/download/368/240?utm_source" target="_blank">Jurnal Universitas Almuslim</a></ul>
+                    <ul><a href="https://jurnalmahasiswa.com/index.php/appa/article/download/2109/1424/4311?utm_source" target="_blank">Jurnal Mahasiswa</a></ul>
+                </section>
+            `;
+        
+            let content = '';
+        
+            if (course === "algoritma") content = algoritmaSection;
+            else if (course === "css") content = cssSection;
+            else if (course === "javascript") content = cSection;
+            else content = "<p>Course tidak ditemukan.</p>";
+        
+            document.querySelector("main").innerHTML = content + document.querySelector("main").innerHTML;
+        </script>
+</body>
